@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Hello World. My name is <strong>Kyo<strong>. 
+        <!-- strong change the font -->
+    </p>
+
+    <!-- メールアドレス入力 -->
+    <!-- size属性で幅、maxlength属性で入力される文字数を指定することができます。 -->
+    <!-- placeholder属性でテキストフィールドに初期値としてヒントを示してユーザーの操作を補助することができます。 -->
+    <!-- 右画面のemailの枠内に実際に文字を入力してみましょう。(type属性) -->
+    <input type="text" name="email" placeholder="email" size="50" maxlength="30">
+
+    <br>
+
+    <!-- パスワード入力 -->
+    <!-- 右画面のパスワードの枠内に実際に文字を入力してみましょう。(type属性) -->
+    <input type="password" name="password" placeholder="password" size="15" maxlength="15">
+
+    <br>
+
+    <!-- ラジオボタン -->
+    <!-- labelタグを使うことによって、チェックボックスではなく、文字の部分をクリックしてもチェックを付けることができます。 -->
+    <div class="radio_button">
+            <!-- 「Yes」という文字をクリックしてみましょう。 -->
+        <label>
+            <input type="radio" name="radio">Yes
+        </label>
+
+        <!-- 「No」という文字をクリックしてみましょう。 -->
+        <label>
+            <input type="radio" name="radio">No
+        </label>
+
+        <!-- 「N/A」という文字をクリックしてみましょう。 -->
+        <!-- labelタグが使われていないので、文字を押しても反応しません。 -->
+        <input type="radio" name="radio">N/A
+    </div>
+
+
+    <br>
+
+    <!-- チェックボタン -->
+    <div class="check_button">
+        <label>
+            <input type="checkbox" name="check">walk
+        </label>
+        <label>
+            <input type="checkbox" name="check">train
+        </label>
+        <label>
+            <input type="checkbox" name="check">bus
+        </label>
+    </div>
+
+
+    <br>
+
+    <!-- ボタン -->
+    <!-- value属性の値がボタンのテキストとして表示されます。 -->
+    <input type="submit" value="ログイン">
+</body>
+</html>
